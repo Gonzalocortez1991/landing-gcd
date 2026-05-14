@@ -868,6 +868,8 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
             margin-top: 60px;
+            position: relative;
+            z-index: 10;
         }
 
         .service-card {
@@ -877,7 +879,7 @@
             position: relative;
             transition: all 0.4s;
             overflow: hidden;
-            z-index: 1;
+            z-index: 10;
         }
 
         .service-card::before {
@@ -1656,6 +1658,7 @@
             <div class="hero-buttons">
                 <button class="btn-neon" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">INFO</button>
                 <button class="btn-ghost" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Conoce más</button>
+                <a href="https://wa.me/5491161677122?text=Test" target="_blank" style="padding:14px 32px;border:1px solid #25D366;color:#25D366;font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;">TEST WHATSAPP</a>
             </div>
         </div>
 
