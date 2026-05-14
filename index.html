@@ -908,6 +908,7 @@
             height: 20px;
             border-top: 1px solid var(--neon);
             border-left: 1px solid var(--neon);
+            pointer-events: none;
         }
 
         .service-corner-br {
@@ -918,6 +919,7 @@
             height: 20px;
             border-bottom: 1px solid var(--neon);
             border-right: 1px solid var(--neon);
+            pointer-events: none;
         }
 
         .service-number {
@@ -981,6 +983,8 @@
             cursor: pointer;
             transition: all 0.3s;
             text-decoration: none;
+            position: relative;
+            z-index: 10;
         }
 
         .btn-whatsapp:hover {
