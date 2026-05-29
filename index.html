@@ -22,6 +22,22 @@
 
     <link rel="canonical" href="https://tu-dominio.com">
     <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2N5KRY06B3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2N5KRY06B3');
+    </script>
+    <!-- Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "wx9o98lquc");
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne+Mono&display=swap" rel="stylesheet">
@@ -1344,6 +1360,372 @@
             background: linear-gradient(90deg, transparent, rgba(166, 255, 0, 0.1), transparent);
         }
 
+        /* ===== LEAD MAGNET ===== */
+        .lead-magnet {
+            position: relative;
+            padding: 100px 60px;
+            z-index: 5;
+            background: linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 100%);
+            overflow: hidden;
+        }
+
+        .lead-magnet-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .lead-magnet-left {
+            position: relative;
+        }
+
+        .lead-magnet-badge {
+            font-family: 'Syne Mono', monospace;
+            font-size: 9px;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            color: var(--neon);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .lead-magnet-badge::before {
+            content: '';
+            width: 20px;
+            height: 1px;
+            background: var(--neon);
+        }
+
+        .lead-magnet-title {
+            font-size: clamp(24px, 3.5vw, 36px);
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .lead-magnet-title .neon-text {
+            color: var(--neon);
+            text-shadow: 0 0 20px rgba(166, 255, 0, 0.25);
+        }
+
+        .lead-magnet-desc {
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--gray-light);
+            margin-bottom: 24px;
+            max-width: 420px;
+        }
+
+        .lead-magnet-features {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .lead-magnet-feat {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 12px;
+            color: var(--gray-light);
+        }
+
+        .lead-magnet-feat .check {
+            width: 16px;
+            height: 16px;
+            border: 1px solid var(--neon);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lead-magnet-feat .check::after {
+            content: '';
+            width: 7px;
+            height: 3px;
+            border-left: 1.5px solid var(--neon);
+            border-bottom: 1.5px solid var(--neon);
+            transform: rotate(-45deg) translate(0.5px, -0.5px);
+        }
+
+        .lead-magnet-right {
+            position: relative;
+        }
+
+        .lead-magnet-form-wrap {
+            background: rgba(10, 10, 10, 0.9);
+            border: 1px solid rgba(166, 255, 0, 0.12);
+            padding: 40px 36px;
+            position: relative;
+        }
+
+        .lead-magnet-form-wrap::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            right: -1px;
+            bottom: -1px;
+            border: 1px solid rgba(166, 255, 0, 0.06);
+            pointer-events: none;
+        }
+
+        .form-corner-tl {
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            width: 16px;
+            height: 16px;
+            border-top: 1px solid var(--neon);
+            border-left: 1px solid var(--neon);
+            pointer-events: none;
+        }
+
+        .form-corner-br {
+            position: absolute;
+            bottom: -1px;
+            right: -1px;
+            width: 16px;
+            height: 16px;
+            border-bottom: 1px solid var(--neon);
+            border-right: 1px solid var(--neon);
+            pointer-events: none;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-label {
+            font-family: 'Syne Mono', monospace;
+            font-size: 8px;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--gray);
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 14px 16px;
+            background: var(--bg);
+            border: 1px solid rgba(166, 255, 0, 0.12);
+            color: var(--white);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-input:focus {
+            border-color: var(--neon-mid);
+        }
+
+        .form-input::placeholder {
+            color: var(--gray);
+            font-size: 13px;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 16px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            border: 1px solid var(--neon);
+            color: var(--neon);
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+            margin-top: 4px;
+        }
+
+        .form-submit::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--neon);
+            transition: left 0.3s;
+            z-index: -1;
+        }
+
+        .form-submit:hover {
+            color: var(--bg);
+            box-shadow: 0 0 20px rgba(166, 255, 0, 0.3);
+        }
+
+        .form-submit:hover::before {
+            left: 0;
+        }
+
+        .form-submit:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .form-note {
+            font-family: 'Syne Mono', monospace;
+            font-size: 8px;
+            color: var(--gray);
+            text-align: center;
+            margin-top: 14px;
+            letter-spacing: 0.1em;
+        }
+
+        .form-success {
+            display: none;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .form-success.show {
+            display: block;
+        }
+
+        .form-success-icon {
+            width: 48px;
+            height: 48px;
+            border: 2px solid var(--neon);
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .form-success-icon::after {
+            content: '';
+            width: 16px;
+            height: 8px;
+            border-left: 2px solid var(--neon);
+            border-bottom: 2px solid var(--neon);
+            transform: rotate(-45deg) translate(1px, -2px);
+        }
+
+        .form-success h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--neon);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+            text-shadow: 0 0 15px rgba(166, 255, 0, 0.2);
+        }
+
+        .form-success p {
+            font-size: 13px;
+            color: var(--gray-light);
+            line-height: 1.6;
+        }
+
+        .form-success .btn-neon {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 32px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            border: 1px solid var(--neon);
+            color: var(--neon);
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .form-success .btn-neon:hover {
+            color: var(--bg);
+            background: var(--neon);
+            box-shadow: 0 0 20px rgba(166, 255, 0, 0.4);
+        }
+
+        .lead-magnet-hud {
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .lead-magnet-hud.tl {
+            top: -20px;
+            left: -20px;
+            width: 40px;
+            height: 40px;
+            border-top: 1px solid rgba(166, 255, 0, 0.08);
+            border-left: 1px solid rgba(166, 255, 0, 0.08);
+        }
+
+        .lead-magnet-hud.br {
+            bottom: -20px;
+            right: -20px;
+            width: 40px;
+            height: 40px;
+            border-bottom: 1px solid rgba(166, 255, 0, 0.08);
+            border-right: 1px solid rgba(166, 255, 0, 0.08);
+        }
+
+        .form-error {
+            font-family: 'Syne Mono', monospace;
+            font-size: 9px;
+            color: #ff3355;
+            margin-top: 8px;
+            display: none;
+            text-align: center;
+        }
+
+        .form-error.show {
+            display: block;
+        }
+
+        @media (max-width: 1024px) {
+            .lead-magnet-inner {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .lead-magnet {
+                padding: 80px 30px;
+            }
+            .lead-magnet-left {
+                text-align: center;
+            }
+            .lead-magnet-badge {
+                justify-content: center;
+            }
+            .lead-magnet-desc {
+                margin: 0 auto 24px;
+            }
+            .lead-magnet-features {
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .lead-magnet {
+                padding: 60px 20px;
+            }
+            .lead-magnet-form-wrap {
+                padding: 28px 20px;
+            }
+        }
+
         /* ===== SCROLL ANIMATIONS ===== */
         .reveal {
             opacity: 0;
@@ -1633,10 +2015,12 @@
         <div class="nav-logo">GCD</div>
         <div class="nav-coords">35.6762° N / 139.6503° E</div>
         <ul class="nav-menu">
+            <li><a href="#lead-magnet">Mapa gratis</a></li>
             <li><a href="#about">Sobre mí</a></li>
             <li><a href="#services">Servicios</a></li>
             <li><a href="#tools">Herramientas</a></li>
             <li><a href="#faq">FAQ</a></li>
+            <li><a href="LANDING-PACK-STARTER.html" onclick="gtag('event', 'click_cta', {event_category:'nav',event_label:'pack_starter'});">Pack Starter</a></li>
         </ul>
     </nav>
 
@@ -1677,6 +2061,55 @@
         <div class="hero-hud-1">
             <div>// TARGET_LOCKED</div>
             <div>// SIGNAL: ACTIVE</div>
+        </div>
+    </section>
+
+    <!-- LEAD MAGNET -->
+    <section id="lead-magnet" class="lead-magnet">
+        <div class="smoke" style="bottom: 0%; left: 10%; width: 500px; height: 500px;"></div>
+        <div class="smoke" style="top: 10%; right: 30%; width: 300px; height: 300px;"></div>
+        <div class="lead-magnet-hud tl"></div>
+        <div class="lead-magnet-hud br"></div>
+
+        <div class="lead-magnet-inner">
+            <div class="lead-magnet-left reveal">
+                <div class="lead-magnet-badge">Recurso gratuito</div>
+                <h2 class="lead-magnet-title">Descargá <span class="neon-text">El Mapa Digital</span></h2>
+                <p class="lead-magnet-desc">Las 5 áreas conectadas en orden. El mapa que a mí me hubiera gustado tener cuando empecé.</p>
+                <div class="lead-magnet-features">
+                    <div class="lead-magnet-feat"><div class="check"></div> Marketing → IA → Crecimiento → Finanzas → Cripto</div>
+                    <div class="lead-magnet-feat"><div class="check"></div> PDF resumen + 5 slides clave + audio 35 min</div>
+                    <div class="lead-magnet-feat"><div class="check"></div> Sin spam. Solo el mapa.</div>
+                </div>
+            </div>
+
+            <div class="lead-magnet-right reveal" style="transition-delay: 0.15s;">
+                <div class="lead-magnet-form-wrap">
+                    <div class="form-corner-tl"></div>
+                    <div class="form-corner-br"></div>
+
+                    <form id="leadForm" class="form-active">
+                        <div class="form-group">
+                            <label class="form-label" for="leadName">Nombre</label>
+                            <input class="form-input" type="text" id="leadName" placeholder="Tu nombre" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="leadEmail">Email</label>
+                            <input class="form-input" type="email" id="leadEmail" placeholder="tu@email.com" required autocomplete="email">
+                        </div>
+                        <button class="form-submit" type="submit" id="leadSubmit">Obtener mapa gratis →</button>
+                        <div class="form-error" id="formError">Completá todos los campos con un email válido.</div>
+                        <div class="form-note">Sin spam. Borrado inmediato si no te sirve.</div>
+                    </form>
+
+                    <div class="form-success" id="formSuccess">
+                        <div class="form-success-icon"></div>
+                        <h3>✓ Listo</h3>
+                        <p>Revisá tu email (o carpeta de spam).<br>El mapa digital ya está en camino.</p>
+                        <a href="#services" class="btn-neon" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Ver servicios →</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -1731,17 +2164,17 @@
                 <div class="service-price">$30 <span>USD</span></div>
                 <p class="service-desc">Marketing → IA → Crecimiento → Finanzas → Cripto en orden. El punto de partida.</p>
                 <div class="service-tag">Principiantes</div>
-                <a href="https://wa.me/5491161677122?text=Hola%2C%20me%20interesa%20la%20Sesión%20Base%20de%20%2430%20USD" target="_blank" style="display:inline-block;margin-top:24px;padding:12px 24px;border:1px solid #25D366;color:#25D366;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;cursor:pointer;">Reservar ahora</a>
+                <a href="https://wa.me/5491161677122?text=Hola%2C%20me%20interesa%20la%20Sesión%20Base%20de%20%2430%20USD" target="_blank" style="display:inline-block;margin-top:24px;padding:12px 24px;border:1px solid #25D366;color:#25D366;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;cursor:pointer;" onclick="gtag('event', 'click_cta', {event_category:'whatsapp',event_label:'sesion_base'});">Reservar ahora</a>
             </div>
             <div class="service-card" style="transition-delay: 0.2s;">
                 <div class="service-corner-tl"></div>
                 <div class="service-corner-br"></div>
                 <div class="service-number">[02] PROGRAMA</div>
                 <div class="service-title">Programa 2 sesiones</div>
-                <div class="service-price">$60 <span>USD</span></div>
+                <div class="service-price">$50 <span>USD</span></div>
                 <p class="service-desc">Elige un área para profundizar. Profundizamos en la zona que más necesites.</p>
                 <div class="service-tag">Intermedio</div>
-                <a href="https://wa.me/5491161677122?text=Hola%2C%20me%20interesa%20el%20Programa%20de%202%20sesiones%20por%20%2460%20USD" target="_blank" style="display:inline-block;margin-top:24px;padding:12px 24px;border:1px solid #25D366;color:#25D366;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;cursor:pointer;">Reservar ahora</a>
+                <a href="https://wa.me/5491161677122?text=Hola%2C%20me%20interesa%20el%20Programa%20de%202%20sesiones%20por%20%2450%20USD" target="_blank" style="display:inline-block;margin-top:24px;padding:12px 24px;border:1px solid #25D366;color:#25D366;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;cursor:pointer;" onclick="gtag('event', 'click_cta', {event_category:'whatsapp',event_label:'programa_2_sesiones'});">Reservar ahora</a>
             </div>
             <div class="service-card" style="transition-delay: 0.3s;">
                 <div class="service-corner-tl"></div>
@@ -1751,7 +2184,7 @@
                 <div class="service-price">$250 <span>USD</span></div>
                 <p class="service-desc">5 programas (10 sesiones). El mapa completo para escalar en serio.</p>
                 <div class="service-tag">Avanzado</div>
-                <a href="https://wa.me/5491161677122?text=Hola%2C%20me%20interesa%20el%20Pack%20Completo%20por%20%24250%20USD" target="_blank" style="display:inline-block;margin-top:24px;padding:12px 24px;border:1px solid #25D366;color:#25D366;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;cursor:pointer;">Reservar ahora</a>
+                <a href="https://wa.me/5491161677122?text=Hola%2C%20me%20interesa%20el%20Pack%20Completo%20por%20%24250%20USD" target="_blank" style="display:inline-block;margin-top:24px;padding:12px 24px;border:1px solid #25D366;color:#25D366;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;cursor:pointer;" onclick="gtag('event', 'click_cta', {event_category:'whatsapp',event_label:'pack_completo_250'});">Reservar ahora</a>
             </div>
         </div>
     </section>
@@ -1859,6 +2292,20 @@
         </div>
     </section>
 
+    <!-- PACK STARTER -->
+    <section style="text-align:center; background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);">
+        <div class="reveal">
+            <div class="section-label" style="justify-content:center;">Pack Starter</div>
+            <h2 class="section-title"><span class="neon-text">Código de Fuga</span> — el ebook</h2>
+            <p class="section-desc" style="margin:0 auto 32px; text-align:center;">La historia real de cómo alguien común construyó un sistema digital desde cero. 16 capítulos, +12 herramientas reveladas, 3 bonuses.</p>
+            <div style="display:flex; gap:24px; justify-content:center; align-items:center; flex-wrap:wrap; margin-bottom:32px;">
+                <span style="font-size:48px; font-weight:700; color:var(--neon); text-shadow: 0 0 20px rgba(166,255,0,0.2);">$5 <span style="font-size:18px; font-weight:400; color:var(--gray); text-decoration:line-through;">$29</span></span>
+                <span style="font-family:'Syne Mono', monospace; font-size:10px; color:var(--gray); letter-spacing:0.1em;">Acceso inmediato · Garantía Hotmart 7 días</span>
+            </div>
+            <a href="LANDING-PACK-STARTER.html" class="btn-neon" style="display:inline-block; text-decoration:none;" onclick="gtag('event', 'click_cta', {event_category:'product',event_label:'pack_starter_section'});">Conocer más →</a>
+        </div>
+    </section>
+
     <!-- FAQ -->
     <section id="faq" style="background: var(--bg-2);">
         <div class="reveal" style="text-align: center;">
@@ -1905,30 +2352,32 @@
         </div>
     </section>
 
+    <!-- Hidden form for GAS submission -->
+    <iframe name="gas_frame" style="display:none"></iframe>
+    <form id="hiddenForm" action="https://script.google.com/macros/s/AKfycbxCIDUw6BZjvNg9h613iFGwFi4xnBJqr9reLzXkAkXth0KvLbkV4ySrpwZmiVVKNBMlpg/exec" method="POST" target="gas_frame" style="display:none">
+        <input type="hidden" name="name" id="hiddenName" value="">
+        <input type="hidden" name="email" id="hiddenEmail" value="">
+        <input type="hidden" name="source" value="mapa-digital">
+    </form>
+
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-scanline"></div>
         <div class="footer-cta">Escribime <span>INFO</span> al DM</div>
         <div class="social-icons">
-            <a href="#" class="social-icon" aria-label="Instagram">
+            <a href="https://www.instagram.com/gonzalo.crecimientodigital/" class="social-icon" aria-label="Instagram" target="_blank">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                     <circle cx="12" cy="12" r="4"/>
                     <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
                 </svg>
             </a>
-            <a href="#" class="social-icon" aria-label="Twitter">
+            <a href="https://x.com/Gonzalo19583806" class="social-icon" aria-label="Twitter" target="_blank">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                     <path d="M4 4l11.733 16h4.267l-11.733-16zM4 20l6.4-8M20 4l-6.4 8"/>
                 </svg>
             </a>
-            <a href="#" class="social-icon" aria-label="LinkedIn">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                    <rect x="2" y="9" width="4" height="12"/>
-                    <circle cx="4" cy="4" r="2"/>
-                </svg>
-            </a>
+
         </div>
         <div class="footer-copy">© 2026 · GCD · Sistema v1.0 · Todos los derechos reservados</div>
     </footer>
@@ -1991,6 +2440,48 @@
                 }, 50);
             });
         });
+
+        // ===== LEAD MAGNET FORM =====
+        (function() {
+            const form = document.getElementById('leadForm');
+            const nameInput = document.getElementById('leadName');
+            const emailInput = document.getElementById('leadEmail');
+            const submitBtn = document.getElementById('leadSubmit');
+            const errorEl = document.getElementById('formError');
+            const formBox = document.querySelector('.form-active');
+            const successEl = document.getElementById('formSuccess');
+
+            if (!form) return;
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                errorEl.classList.remove('show');
+
+                const name = nameInput.value.trim();
+                const email = emailInput.value.trim();
+
+                if (!name || !email || !email.includes('@')) {
+                    errorEl.classList.add('show');
+                    return;
+                }
+
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Enviando...';
+
+                document.getElementById('hiddenName').value = name;
+                document.getElementById('hiddenEmail').value = email;
+                document.getElementById('hiddenForm').submit();
+                if (typeof gtag === 'function') {
+                    gtag('event', 'generate_lead', { event_category: 'form', event_label: 'mapa_digital' });
+                }
+                showSuccess();
+            });
+
+            function showSuccess() {
+                if (formBox) formBox.style.display = 'none';
+                if (successEl) successEl.classList.add('show');
+            }
+        })();
     </script>
 </body>
 </html>
