@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>¡Compra exitosa! — Gonzalo Crecimiento Digital</title>
+<title>Gracias por tu compra — Gonzalo Crecimiento Digital</title>
 
 <!-- Meta Pixel -->
 <script>
@@ -128,20 +128,14 @@ gtag('js',new Date());gtag('config','G-2N5KRY06B3');
 <div class="container">
   <div class="badge">// PAGO CONFIRMADO</div>
   <h1>¡Compra <span>exitosa</span>!</h1>
-  <p class="sub">Tu producto ya está disponible en Hotmart. Revisá tu email (y la carpeta de spam) o accedé desde tu cuenta de Hotmart.</p>
+  <p class="sub">Gracias por tu compra. Revisá tu email (y la carpeta de spam) o accedé desde tu cuenta de Hotmart.</p>
 
-  <div class="card" id="productCard">
-    <h3 id="productName">Las 5 Áreas — Sistema Digital Completo</h3>
-    <ul id="productIncludes">
-      <li>Acceso vitalicio</li>
-      <li>Actualizaciones gratuitas</li>
-      <li>Soporte por email</li>
-    </ul>
+  <div class="card">
+    <h3>Compra confirmada</h3>
+    <p style="font-size:13px;color:var(--text-dim);">Tu producto está siendo procesado por Hotmart. En unos minutos recibirás un email con las instrucciones de acceso.</p>
   </div>
 
-  <a class="btn" id="downloadBtn" href="https://landing-gcd.vercel.app/LAS-5-AREAS.html" target="_blank">Acceder ahora →</a>
-
-  <p style="font-size:12px;color:var(--text-muted);margin-top:12px;">También recibiste el link por email de Hotmart</p>
+  <p style="font-size:12px;color:var(--text-muted);margin-top:12px;">Si no recibiste nada, revisá tu carpeta de spam o escribinos a gonzalocortez1991@gmail.com</p>
 
   <p style="margin-top:24px;font-size:12px;color:var(--text-dim);">
     ¿Listo para el siguiente nivel?
@@ -155,69 +149,7 @@ gtag('js',new Date());gtag('config','G-2N5KRY06B3');
 </div>
 
 <script>
-(function() {
-  const params = new URLSearchParams(window.location.search);
-  const product = params.get('product') || 'pack-starter';
-  const price = parseFloat(params.get('price')) || 5;
-  const paymentId = params.get('payment_id') || params.get('transaction_code') || params.get('hottok') || '';
-
-  const products = {
-    'las-5-areas': {
-      name: 'Las 5 Áreas — Sistema Digital Completo',
-      url: 'https://landing-gcd.vercel.app/LAS-5-AREAS.html',
-      includes: ['5 módulos interactivos', 'Checklists por módulo', 'Stack de herramientas', 'Acceso vitalicio']
-    },
-    'pack-starter': {
-      name: 'Pack Starter — Código de Fuga',
-      url: 'https://landing-gcd.vercel.app/pack-starter-completo.zip',
-      includes: ['Ebook 16 capítulos', 'Plan de Acción 30 Días', 'Stack de 12 herramientas', 'Plantilla de estrategia']
-    },
-    'diagnostico-5-areas': {
-      name: 'Diagnóstico Interactivo de 5 Áreas',
-      url: 'https://landing-gcd.vercel.app/DIAGNOSTICO-5-AREAS.html',
-      includes: ['Dashboard HUD con scores', 'Área prioritaria detectada', '3 pasos concretos personalizados', 'Acceso ilimitado']
-    },
-    'calculadora-perdida': {
-      name: 'Calculadora de Pérdida por Desorden',
-      url: 'https://landing-gcd.vercel.app/CALCULADORA-PERDIDA-DESORDEN.html',
-      includes: ['Selector de items probados', 'Slider de pérdida ajustable', 'Comparación visual vs orden correcto', 'Roadmap de 5 áreas']
-    },
-    'plan-15-min': {
-      name: 'Plan 15 Minutos al Día',
-      url: 'https://landing-gcd.vercel.app/PLAN-15-MIN-DIA.html',
-      includes: ['Timeline 12 semanas', 'Checklists diarios de 5-15 min', 'Progreso visual semana a semana', 'Sin jerga técnica']
-    }
-  };
-
-  const p = products[product] || products['las-5-areas'];
-
-  document.getElementById('productName').textContent = p.name;
-  document.getElementById('downloadBtn').href = p.url;
-
-  const list = document.getElementById('productIncludes');
-  list.innerHTML = p.includes.map(i => '<li>' + i + '</li>').join('');
-
-  // Purchase event
-  if (typeof fbq === 'function') {
-    fbq('track', 'Purchase', {
-      value: price,
-      currency: 'USD',
-      content_name: p.name,
-      content_category: 'infoproducto',
-      content_ids: [product],
-      content_type: 'product'
-    });
-  }
-
-  if (typeof gtag === 'function') {
-    gtag('event', 'purchase', {
-      transaction_id: paymentId || 'pending-' + Date.now(),
-      value: price,
-      currency: 'USD',
-      items: [{ id: product, name: p.name, price: price, quantity: 1 }]
-    });
-  }
-})();
+gtag('event', 'purchase', {transaction_id:'fallback-' + Date.now(), value:0, currency:'USD', items:[]});
 </script>
 
 </body>
