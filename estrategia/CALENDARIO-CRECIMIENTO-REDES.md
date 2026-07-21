@@ -1,176 +1,161 @@
-# Calendario de Contenido — GCD (enfocado en ventas)
+# Calendario de Contenido — GCD v2 (híbrido YouTube + ventas)
 
-> **Problema:** 33k+ views en pauta → 0 ventas, 0 crecimiento orgánico.
-> **Causa raíz:** La pauta lleva a contenido que no vende. Y el contenido orgánico no prepara el terreno para la compra.
-> **Solución:** Un calendario donde CADA pieza acerca a la compra, directa o indirectamente.
-> No hay contenido "por presencia". Todo contenido tiene un trabajo que hacer.
-
----
-
-## El embudo real de GCD hoy
-
-```
-Pauta → 33k views → ???
-                        ├── Llegan al perfil → bio confusa → se van
-                        ├── Llegan a landing → no entienden → se van
-                        └── Llegan a producto → no hay suficiente confianza → no compran
-```
-
-El problema no es la pauta. El problema es que después de la pauta no hay un sistema que convierta.
+> **Problema:** 33k+ views en pauta → 0 ventas.
+> **Motor principal:** 1 video largo de YouTube por semana → Opus Pro extrae clips automáticamente.
+> **Piezas diseñadas:** Solo 2-3 por semana (carrusel de dolor, demo de producto, caso).
+> **Objetivo:** Mínimo esfuerzo operativo, máximo enfoque en conversión.
 
 ---
 
-## Los 3 tipos de contenido que venden
+## Cómo funciona el sistema
 
-| Tipo | Propósito | Cadencia | Métrica clave |
-|------|-----------|----------|---------------|
-| **Frío (pauta)** | Tráfico pago a landing + checkout directo | Cuando haya presupuesto | ROAS (costo por venta) |
-| **Tibio (orgánico)** | Construir confianza para que compren cuando lleguen | 1 post/día + stories | Guardados + visitas al perfil |
-| **Caliente (email/WhatsApp)** | Cerrar la venta con leads que ya entraron al sistema | Automatizado | Tasa de conversión |
-
-Este calendario organiza el contenido **tibio (orgánico)** porque es lo que falta: contenido que construya confianza suficiente para que cuando la pauta lleve gente al perfil, compren.
+```
+┌──────────────────────────────────────────────────┐
+│  YOUTUBE (1 video/semana)                        │
+│  Grabás y editás 1 video técnico                 │
+│  → Opus Pro extrae 5-10 clips automáticamente    │
+│  → Publicás 1 clip por día (sin editar)          │
+└──────────────┬───────────────────────────────────┘
+               │
+               ▼
+┌──────────────────────────────────────────────────┐
+│  CLIPS ORGÁNICOS (Lun, Mar, Jue, Sáb)           │
+│  Sin CTA de venta. Solo construir confianza.     │
+│  CTA suave: "Guardalo", "Compartilo"             │
+│  Costo operativo: $0, 0 minutos de edición       │
+└──────────────┬───────────────────────────────────┘
+               │
+               ▼
+┌──────────────────────────────────────────────────┐
+│  PIEZAS DISEÑADAS (Mié + Vie)                    │
+│  Carrusel de dolor → "link en bio"               │
+│  Reel de producto/caso → "link en bio"           │
+│  Costo operativo: ~30 min cada una               │
+└──────────────────────────────────────────────────┘
+```
 
 ---
 
-## Parrilla semanal — contenido orgánico que vende
+## Parrilla semanal
 
-| Día | Tipo | Formato | Idea / Hook | Conexión con venta |
-|-----|------|---------|-------------|-------------------|
-| **Lun** | Prueba social | Reel 25s | "Con [X] dólares esta persona resolvió [problema] en [Y tiempo]" | Muestra que el sistema funciona en personas reales |
-| **Mar** | Educativo | Carrusel 5 slides | "El error que te está costando [dinero/tiempo] sin que lo sepas" | Duele → necesita solución → conocé el sistema |
-| **Mié** | Demostración | Reel 30s (Miro) | "Este es el orden exacto. Si lo seguís, llegás." | Muestra el mapa → "todo esto está en el Pack Starter" |
-| **Jue** | Objeción | Reel 20s | "¿[Problema común]? No necesitas más cursos, necesitas orden." | Responde objeción "no tengo plata/no tengo tiempo" |
-| **Vie** | Preview producto | Reel 20s | "Adentro del Pack Starter hay [recurso específico]" | Muestra UN solo elemento del producto |
-| **Sáb** | Historia personal | Reel 30s | "Pasé de [situación A] a [situación B]. Esto fue lo primero que hice." | Identificación → "si él pudo, yo puedo" |
-| **Dom** | Cierre suave | Story interactiva | "Esta semana ayudé a [N] personas con [tema]. La semana que viene viene [preview]" | FOMO + anticipación |
+| Día | Contenido | De dónde sale | Esfuerzo | CTA |
+|-----|-----------|---------------|----------|-----|
+| **Lun** | Clip Opus Pro (orgánico) | Del video de YouTube de la semana pasada | 0 min | "Guardalo para después" |
+| **Mar** | Clip Opus Pro (orgánico) | Del video de YouTube de esta semana | 0 min | "Compartilo con alguien" |
+| **Mié** | **Carrusel de dolor** (5 slides) | Diseñado aparte | 30 min | "Link en bio → Pack Starter" |
+| **Jue** | Clip Opus Pro (orgánico) | Del video de YouTube de esta semana | 0 min | "Seguime para la parte 2" |
+| **Vie** | **Reel de producto / caso** | Diseñado o extraído con intención de venta | 30 min | "Link en bio → conseguilo acá" |
+| **Sáb** | Clip Opus Pro (orgánico) | Del video de YouTube de esta semana | 0 min | "Guardalo" |
+| **Dom** | Stories de cierre + preview | Sin edición | 5 min | Interacción |
+
+**Esfuerzo semanal total:** 1 video YouTube + 2 piezas diseñadas (~1.5h) + stories diarias (5 min/día)
 
 ---
 
-## Estructura de cada pieza
+## Las 2 piezas diseñadas (las únicas que vendan)
 
-### Reel (educativo / demostración / historia)
+### Miércoles — Carrusel de dolor
 
-```
-[0:00-0:04] HOOK con dolor concreto
-            "Si estás [situación específica], esto es para vos."
-            El dolor tiene que ser tan específico que el que lo vive
-            se sienta identificado al instante.
-
-[0:04-0:22] DESARROLLO — mostrás parte de la solución
-            - El orden de las 5 áreas
-            - Una herramienta concreta
-            - Un error que cometiste
-            - Un resultado que conseguiste
-            ⚠ Mostrás el QUÉ pero NO el CÓMO completo.
-
-[0:22-0:30] CIERRE con dirección
-            "Si querés el paso a paso completo, link en bio."
-            O: "Todo esto está en el Pack Starter — link en bio."
-            ⚠ Siempre link en bio. Siempre.
-```
-
-### Carrusel (educativo — martes)
+El carrusel es la pieza que más guardados genera. Y guardados = más alcance = más chances de venta.
 
 ```
-Slide 1: Título dolor + CTA guardado
-         "El error que te está costando [X] sin que lo sepas"
-         "Guardá esto para tenerlo siempre a mano"
-
-Slide 2: El error → describí el error concreto
-Slide 3: Por qué duele → cuantificá la pérdida (tiempo/dinero/oportunidades)
-Slide 4: La solución en 3 pasos → mostrá el framework sin dar el detalle
+Slide 1: "El error que te está costando [X] sin que lo sepas"
+         "Guardá esto para tenerlo siempre"
+Slide 2: Describí el error concreto
+Slide 3: Cuantificá la pérdida (tiempo, dinero, oportunidades)
+Slide 4: La solución en 3 pasos (sin dar el detalle completo)
 Slide 5: "Si querés el sistema completo → link en bio"
 ```
 
----
+### Viernes — Reel de producto o caso real
 
-## Qué hacer con la pauta ($)
-
-La pauta no va a contenido de "seguime". La pauta va DIRECTAMENTE a:
-1. **Checkout de Hotmart** (compra directa) — si el producto es de $5, probá pauta directa
-2. **Landing de producto** — si el producto necesita más explicación ($19)
-3. **Lead magnet (gratis)** — para capturar email y vender por MailerLite después
-
-**Presupuesto sugerido:** $2-3/día durante 7 días para testear. Si no hay ventas en 7 días, cambiá el creativo. Si hay, aumentá.
-
-**Creativo para pauta directa a Hotmart:**
 ```
-Título: El mapa que conecta las 5 áreas digitales
-Texto: Probaste cursos, mentores, métodos sueltos — y nada cerró.
-No es tu culpa. Te mostraron piezas sin el orden.
-Este ebook de 16 capítulos te muestra la secuencia exacta.
-$5 · 48h de garantía · Acceso inmediato.
-CTA: Comprar ahora
+[0:00-0:05] Hook con resultado concreto
+            "[Persona] hizo [X] y en [Y tiempo] logró [Z]"
+            O: "Adentro del Pack Starter hay [herramienta específica]"
+
+[0:05-0:20] Mostrar el resultado / la herramienta / el caso
+
+[0:20-0:30] Cierre: "Link en bio. 48h de garantía."
 ```
 
 ---
 
-## Stories diarias (mínimo, 5 min/día)
+## Clip orgánico (sin presión de venta)
 
-Solo 3 stories al día, todas con propósito:
-
-| Momento | Story | Propósito |
-|---------|-------|-----------|
-| 09:00 | "Hoy te voy a mostrar [tema del post]" | Precalentar para el post del día |
-| 13:00 | Link al post del día + "¿Te pasó?" | Llevar tráfico al post |
-| 20:00 | "Respondiendo la pregunta de [nombre]" | Interacción → algoritmo |
-
----
-
-## Checklist semanal de ventas
-
-- [ ] El lunes: 1 post orgánico
-- [ ] El martes: carrusel de dolor + solución
-- [ ] Miércoles a domingo: 1 reel corto por día
-- [ ] Stories: 3/día sin falta
-- [ ] Todas las piezas terminan con "link en bio"
-- [ ] Link en bio apunta a INDEX-GCD.html (todos los checkouts)
-- [ ] La pauta está corriendo (si hay presupuesto) → mínimo $2/día
-
----
-
-## Métricas que importan (para este calendario)
-
-| Métrica | Por qué | Objetivo semanal |
-|---------|---------|------------------|
-| **Clics al link en bio** | Gente que pasó del contenido al perfil y al link | > 50/semana |
-| **Ventas** | Plata real | > 0 (una venta ya valida) |
-| **Guardados** | Señal de valor (no de entretenimiento) | > 10 por carrusel |
-| **CTR de pauta** | El creativo funciona o no | > 1.5% |
-
-Ignorá seguidores, likes, comentarios, alcance. Solo importa: ¿la gente hace clic? ¿compra?
-
----
-
-## Reglas de este calendario
-
-1. **Cada pieza termina con dirección.** "Link en bio" o "conseguilo acá". Sin excepción.
-2. **No hay contenido "para mantener presencia".** Si no acerca a la venta, no se publica.
-3. **El dolor primero, la solución después.** Mostrar el problema duele más que mostrar la solución tentadora.
-4. **La pauta no es para "dar a conocer la marca".** La pauta es para vender o capturar lead.
-5. **Si una pieza no generó clics al link, no la repetís.** Cambiás el enfoque.
-6. **El contenido que muestra resultados concretos** (casos, números, transformaciones) vende más que el contenido teórico.
-7. **Vendé todos los días.** No todos los posts son venta directa, pero todos construyen el camino a la venta.
-
----
-
-## El criterio para crear contenido
-
-Antes de publicar cualquier cosa, preguntate:
+Los clips de Opus Pro NO tienen CTA de venta. Su trabajo es:
+- Que la gente te conozca
+- Que entiendan que sabés del tema
+- Que cuando vean el carrusel del miércoles o el reel del viernes, ya confíen
 
 ```
-¿Esto le da a alguien una razón para:
-  a) Hacer clic en mi link?
-  b) Confiar en mí para comprar después?
-  c) Resolver un dolor que tiene?
-
-Si la respuesta es "no" a todo: no lo publiques.
+[0:00-0:04] Hook: "La mayoría salta al paso 3 sin tener el 1"
+[0:04-0:25] Desarrollo: el clip que Opus Pro extrajo
+[0:25-0:30] Cierre suave: "Guardalo si te sirvió"
+            (sin link en bio, sin venta)
 ```
 
 ---
 
-## Sellos de garantía (incluir en posts de producto)
+## Stories diarias (5 min/día)
 
-- "48 horas de garantía. Si no te sirve, te devolvemos el 100%."
-- "Son $5. Lo que gastás en un café."
-- "Acceso inmediato. Lo comprás, lo tenés."
+Solo 3, sin editar, desde el celular:
+
+| Momento | Story |
+|---------|-------|
+| 09:00 | "Buenos días — hoy toca [tema]" |
+| 13:00 | Link al post del día |
+| 20:00 | Encuesta rápida o pregunta |
+
+---
+
+## Pauta ($)
+
+La pauta es independiente del calendario orgánico. Va directo a:
+
+1. **Checkout de Hotmart** (compra directa) — $5 ideal
+2. **Lead magnet gratis** — capturar email
+
+**$2-3/día. 7 días de test. Si no vende, cambiás creativo.**
+
+---
+
+## Flujo semanal (el día a día real)
+
+```
+DOMINGO noche: grabás y editás el video de YouTube de la semana
+LUNES:         Opus Pro extrae clips → programás la semana
+               Publicás clip 1 + stories
+MARTES:        Publicás clip 2 + stories
+MIÉRCOLES:     Publicás carrusel de dolor + stories
+JUEVES:        Publicás clip 3 + stories
+VIERNES:       Publicás reel de producto/caso + stories
+SÁBADO:        Publicás clip 4 + stories
+DOMINGO:       Stories de cierre + grabás el próximo video
+```
+
+**Carga real:** 1 video + 2 piezas diseñadas + clips automáticos.
+
+---
+
+## Métricas (solo estas importan)
+
+| Métrica | Objetivo semanal |
+|---------|------------------|
+| **Guardados en carrusel** | > 15 |
+| **Clics al link en bio** | > 50 |
+| **Ventas** | > 0 |
+| **CTR de pauta** | > 1.5% |
+
+Ignorá seguidores, likes, comentarios.
+
+---
+
+## Reglas
+
+1. **Los clips de Opus Pro no llevan venta.** Son para construir confianza.
+2. **Solo 2 piezas diseñadas por semana.** Miércoles (carrusel) y viernes (producto/caso).
+3. **Esas 2 piezas son las únicas que piden "link en bio".**
+4. **Si el carrusel no genera > 15 guardados, cambiás el título.** No el formato.
+5. **El video de YouTube es el motor.** Si no hay video, no hay clips para la semana.
+6. **Stories todos los días pero sin editar.** Sacá foto, subí, siguiente.
