@@ -1,0 +1,54 @@
+# === VERCEL IGNORE — Seguridad ===
+# Solo se sirven HTML y assets públicos para landings
+
+# Config y metadata
+.vercel
+.env
+*.json
+*.lock
+.vercelignore
+.gitignore
+
+# Directorios internos (no públicos)
+scripts/
+docs/
+data/
+config/
+media/
+estrategia/
+Stack Rocio/
+kit-cliente/
+legacy/
+Recursos gratuitos/
+Hotmart/
+ffmpeg/
+shorts/
+__pycache__/
+node_modules/
+.agents/
+
+# Archivos misc
+*.py
+*.js
+*.gs
+*.bat
+*.sh
+*.md
+*.txt
+*.csv
+*.ics
+*.docx
+*.pdf
+*.mp4
+*.zip
+*.rar
+
+# Dashboard interno
+DASHBOARD-CENTRAL-GCD.html
+DASHBOARD-CALENDARIO-CONTENIDO.html
+DASHBOARD-ESTRATEGIA.html
+DASHBOARD-GROW-OPERATOR.html
+DASHBOARD-LANZAMIENTO.html
+
+# Vault y assets internos
+activos/assets-reel-vault/
